@@ -1,0 +1,75 @@
+<SET_ME_DISTELLI_USERNAME>/distelli_wordpress:
+      
+  Env:
+    # Set the variables below
+    - MYSQL_ROOT_PASSWORD: "<SET_ME>"
+    - DB_NAME: "<SET_ME>"
+    - DB_USER_NAME: "<SET_ME>"
+    - DB_USER_PASSWORD: "<SET_ME>"
+
+  PkgInclude:
+    - '*'
+
+  CommitData:
+    - RepoType: Git
+    - RepoPath: .
+    
+  PreRelease:
+    - echo '===Begin PreRelease==='
+    - echo 'nothing to do here'
+
+  PreInstall:
+    - echo '===Begin PreInstall==='
+
+    - echo "---Updating apt-get---"
+    - sudo apt-get -y update
+
+    - echo "---Install for php---"
+    - sudo apt-get -y install php5-fpm php5-mysql
+
+    - echo "---Install for NGINX---"
+    - sudo apt-get -y install nginx
+
+    - echo "---Install for mysql---"
+    - 'sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $MYSQL_ROOT_PASSWORD"'
+    - 'sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $MYSQL_ROOT_PASSWORD"'
+    - 'sudo apt-get -y install mysql-server'
+    - mysql -u root -p$MYSQL_ROOT_PASSWORD -e 'CREATE DATABASE IF NOT EXISTS '$DB_NAME'; GRANT ALL PRIVILEGES ON '$DB_NAME'.* TO '$DB_USER_NAME' IDENTIFIED BY "'$DB_USER_PASSWORD'"'
+    
+    - echo "---Install Wordpress---"
+    - wget https://wordpress.org/latest.tar.gz
+    - cd /usr/share/nginx/html
+    - sudo tar -zxvf $DISTELLI_INSTALLHOME/latest.tar.gz --strip 1
+    - sudo chown -R www-data:www-data /usr/share/nginx/html
+
+    - echo "===Done with PreInstall===="
+    
+  PostInstall:
+    - echo '===Begin PostInstall==='
+    
+    - echo "---Setup nginx to serve php---"
+    - sudo rm /etc/nginx/sites-enabled/default
+    - sudo cp $DISTELLI_INSTALLHOME/my-default /etc/nginx/sites-available/my-default
+    - sudo ln -s /etc/nginx/sites-available/my-default /etc/nginx/sites-enabled/default
+    - sudo mv /usr/share/nginx/html/index.html /usr/share/nginx/html/old_index.html
+
+    - echo "---Configure Wordpress with DB credentials---"
+    - sudo sed -i 's/database_name_here/'$DB_NAME'/g' /usr/share/nginx/html/wp-config-sample.php
+    - sudo sed -i 's/username_here/'$DB_USER_NAME'/g' /usr/share/nginx/html/wp-config-sample.php
+    - sudo sed -i 's/password_here/'$DB_USER_PASSWORD'/g' /usr/share/nginx/html/wp-config-sample.php
+    - sudo cp /usr/share/nginx/html/wp-config-sample.php /usr/share/nginx/html/wp-config.php
+    - sudo chmod 640 /usr/share/nginx/html/wp-config.php
+    - sudo chown www-data:www-data /usr/share/nginx/html/wp-config.php
+
+    - echo "===Done with PostInstall===="
+    
+  Start:
+    - sudo service nginx restart
+
+  Restart:
+    - sudo service nginx restart
+    
+  Terminate:
+    - sudo service nginx stop
+      
+    
