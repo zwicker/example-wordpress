@@ -1,4 +1,4 @@
-#Build and Deploying WordPress to 14.4 to Distelli
+#Build and Deploying WordPress to Ubuntu 14.4
 WordPress is a full content management system with thousands of plugins, widgets, and themes.
 
 Distelli is a DevOps continuous integration and continuous deployment tool.
