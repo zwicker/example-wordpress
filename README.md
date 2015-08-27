@@ -25,24 +25,9 @@ Fork this repository to your GitHub account.
 
 ## Step 3. Create the Application in Distelli
 In Distelli click the **Applications** link at the top of the WebUI. Then click the **New App** button on the top right.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/o2KKinKSNyP4xLyZi9AG",
-        "wp_3_applications_shadow.png",
-        "1088",
-        "419",
-        "#99548a",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text](https://www.filepicker.io/api/file/o2KKinKSNyP4xLyZi9AG")
+
 Give your application a name. Use the name **distelli_wordpress**. This name has no bearing on your Wordpress site.
 [block:callout]
 {
