@@ -79,12 +79,15 @@ Note: distelli_wordpress is the name of the application. This must match the nam
 
 Here is an example edited text.
 
-```johndoe/distelli_wordpress:\n      \n  Env:\n    # Set the variables below\n    - MYSQL_ROOT_PASSWORD: \"pa55w0rd\"\n    - DB_NAME: \"wordpress_db\"\n    - DB_USER_NAME: \"wordpress_user\"\n    - DB_USER_PASSWORD: \"wordpress_user_password\"\n",
-      "language": "text"
-    }
-  ]
-}
-[/block]
+```
+johndoe/distelli_wordpress:
+    - Env:
+    # Set the variables below
+    - MYSQL_ROOT_PASSWORD: \"pa55w0rd\"\
+    - DB_NAME: \"wordpress_db\"
+    - DB_USER_NAME: \"wordpress_user\"
+    - DB_USER_PASSWORD: \"wordpress_user_password\"
+```    
 Save your changes.
 Commit the changes to your repository.
 
