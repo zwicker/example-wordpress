@@ -18,12 +18,12 @@ In your web browser navigate to <a href="https://www.distelli.com/signup" target
 
 ![alt text](https://www.filepicker.io/api/file/G44t2S9LRUirfTpuiTtA)
 
-##Step 2. Get the Deployment Instructions
+###Step 2. Get the Deployment Instructions
 The Distelli deployment instructions are in a distelli-manifest.yml file.  This file and an nginx configuration file are available in a distelli public GitHub repository here.
 
 Fork this repository to your GitHub account.
 
-## Step 3. Create the Application in Distelli
+### Step 3. Create the Application in Distelli
 In Distelli click the **Applications** link at the top of the WebUI. Then click the **New App** button on the top right.
 
 ![alt text](https://www.filepicker.io/api/file/o2KKinKSNyP4xLyZi9AG)
@@ -58,7 +58,7 @@ Two environment will be automatically created for you. Click the **All Done** bu
 
 At this point you will pause the *new application workflow* and edit the deployment instructions before continuing.
 
-## Step 4. Edit the distelli-manifest.yml Instructions
+### Step 4. Edit the distelli-manifest.yml Instructions
 
 You already have a distelli-manifest.yml file provided in the repository you forked earlier. You must edit this file and commit the edit to your repository.
 
@@ -91,7 +91,7 @@ johndoe/distelli_wordpress:
 Save your changes.
 Commit the changes to your repository.
 
-## Step 5. Build the Application
+### Step 5. Build the Application
 
 Go back to the Distelli WebUI and click the **I've pushed my Repo** button.
 
@@ -109,7 +109,7 @@ Click the **New Deployment** button at the top right to begin a deployment
 
 ![alt text](https://www.filepicker.io/api/file/hwL33UtQSRWLMSJaH4pw)
 
-## Step 6. Deploy the Application
+### Step 6. Deploy the Application
 
 In the new deployment wokflow step 1, click **Deploy a Release**.
 
@@ -131,7 +131,7 @@ You currently don't have any servers setup in any environments. At this point yo
 
 ![alt text](https://www.filepicker.io/api/file/JH92CMu4QX6dnspPiAFH)
 
-## Step 7. Add a Server
+### Step 7. Add a Server
 
 To facilitate doing a deploy of the Wordpress software from Distelli, you must install the Distelli agent on the server. Instructions for installing the agent can be found in the [Distelli Agent](doc:distelli-agent) reference guide. 
 
@@ -141,7 +141,7 @@ Now return to the Distelli WebUI and click the **Add Servers** link at the top t
 
 ![alt text](https://www.filepicker.io/api/file/wF5bT3UDRD2EVXZUThBs)
 
-## Step 8. Start Deployment
+### Step 8. Start Deployment
 
 Close the Servers dialog and click the **Start Deployment** button.
 
@@ -149,7 +149,7 @@ Close the Servers dialog and click the **Start Deployment** button.
 
 Wordpress is now being installed on your server.
 
-## Step 9. Using your Wordpress Site"
+### Step 9. Using your Wordpress Site
 
 After the deployment is successful you can begin setting up your Wordpress site. Using your browser, connect to your server.
 
