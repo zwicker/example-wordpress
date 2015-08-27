@@ -42,35 +42,19 @@ After entering a name, click the **Use GitHub** button.
   "body": "If the button instead says **Connect GitHub** click that and connect your GitHub account."
 }
 [/block]
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/0ulLJit6TX63o3mJOAiM",
-        "wp_4_new_app1_shadow.png",
-        "1291",
-        "657",
-        "#d43360",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+![alt text](https://www.filepicker.io/api/file/0ulLJit6TX63o3mJOAiM)
+
 Select the repository you forked from [Step 2](#step-2-get-the-deployment-instructions) above.
 
 ![alt text](https://www.filepicker.io/api/file/oHaOt0BQQHi9azS99ilW)
 
 Choose the **master** branch.
 
-![alt text]("https://www.filepicker.io/api/file/2h7kiV2TpK1CA7JfFGWq)
+![alt text](https://www.filepicker.io/api/file/2h7kiV2TpK1CA7JfFGWq)
 
 Two environment will be automatically created for you. Click the **All Done** button to continue.
 
-![alt text]("https://www.filepicker.io/api/file/XQjPWM7QbQbg13HC5aDQ)
+![alt text](https://www.filepicker.io/api/file/XQjPWM7QbQbg13HC5aDQ)
 
 At this point you will pause the *new application workflow* and edit the deployment instructions before continuing.
 
@@ -80,7 +64,7 @@ You already have a distelli-manifest.yml file provided in the repository you for
 
 Edit the distelli-manifest.yml file.
 
-![alt text]("https://www.filepicker.io/api/file/2Ow5jhi0RJWlZ4rCmm5O)
+![alt text](https://www.filepicker.io/api/file/2Ow5jhi0RJWlZ4rCmm5O)
 
 Set the values as appropriate:
 * <SET_ME_DISTELLI_USERNAME> = This should be set to your Distelli username you created when you signed up. For more info see: [Finding Your Distelli Username](doc:finding-your-distelli-username).
@@ -120,7 +104,7 @@ Go back to the Distelli WebUI and click the **I've pushed my Repo** button.
 
 Click the **Looks good. Start Build!** button.
 
-![alt text]("https://www.filepicker.io/api/file/3ulexcwqQ2KGbnaPvsqn)
+![alt text](https://www.filepicker.io/api/file/3ulexcwqQ2KGbnaPvsqn)
 
 The build that is kicked off will validate that you have the correct Distelli user name and your application name matches. After a successful build, a software release will be created. For more information on builds see [Viewing Builds](doc:viewing-builds).
 
@@ -130,8 +114,7 @@ Your successful build will be at the top of the list.
 
 Click the **New Deployment** button at the top right to begin a deployment
 
-![alt text]("https://www.filepicker.io/api/file/hwL33UtQSRWLMSJaH4pw)
-
+![alt text](https://www.filepicker.io/api/file/hwL33UtQSRWLMSJaH4pw)
 
 ## Step 6. Deploy the Application
 
@@ -146,138 +129,37 @@ Select the application you wish to deploy.
 Select the release you wish to deploy. You should only have the one release created from the successful build.
 
 ![alt text](https://www.filepicker.io/api/file/RTabu02eRxuM7Y1vmmJd)
-<br>
+
 Select the **-prod** environment. If you have been following along with the same application name (distell_wordpress) the environment will be named **distelli_wordpress-prod**, select that.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/khDLPHKBQnmAXOi61JNJ",
-        "wp_new_dep4_shadow.png",
-        "1284",
-        "411",
-        "#aa425a",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text](https://www.filepicker.io/api/file/khDLPHKBQnmAXOi61JNJ)
+
 You currently don't have any servers setup in any environments. At this point you will have to login to your server and install the Distelli agent. Click **Add Servers** button.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/JH92CMu4QX6dnspPiAFH",
-        "wp_new_dep5_shadow.png",
-        "1288",
-        "407",
-        "#cd3e5d",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
-[block:api-header]
-{
-  "type": "basic",
-  "title": "Step 7. Add a Server"
-}
-[/block]
+
+![alt text](https://www.filepicker.io/api/file/JH92CMu4QX6dnspPiAFH)
+
+## Step 7. Add a Server
+
 To facilitate doing a deploy of the Wordpress software from Distelli, you must install the Distelli agent on the server. Instructions for installing the agent can be found in the [Distelli Agent](doc:distelli-agent) reference guide. 
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/yNHQGVshQeHDzsCJ4fwj",
-        "wp_2_shadow.png",
-        "752",
-        "492",
-        "#71b0df",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text](https://www.filepicker.io/api/file/yNHQGVshQeHDzsCJ4fwj)
+
 Now return to the Distelli WebUI and click the **Add Servers** link at the top to refresh the list. When your server populates the list, click on it, then click the **Add Servers** button.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/wF5bT3UDRD2EVXZUThBs",
-        "wp_new_dep5as_shadow.png",
-        "599",
-        "915",
-        "#bb454f",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
-[block:api-header]
-{
-  "type": "basic",
-  "title": "Step 8. Start Deployment"
-}
-[/block]
+
+![alt text](https://www.filepicker.io/api/file/wF5bT3UDRD2EVXZUThBs)
+
+## Step 8. Start Deployment
+
 Close the Servers dialog and click the **Start Deployment** button.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/fvWJB0gnTWO5glK640eE",
-        "wp_new_dep5sd_shadow.png",
-        "1295",
-        "539",
-        "#3d80c2",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text](https://www.filepicker.io/api/file/fvWJB0gnTWO5glK640eE)
+
 Wordpress is now being installed on your server.
-[block:api-header]
-{
-  "type": "basic",
-  "title": "Step 9. Using your Wordpress Site"
-}
-[/block]
+
+## Step 9. Using your Wordpress Site"
+
 After the deployment is successful you can begin setting up your Wordpress site. Using your browser, connect to your server.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/OyZRTWDSJOkhzfcNzu9w",
-        "wp_wordpress1_shadow.png",
-        "815",
-        "921",
-        "#2a4158",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text](https://www.filepicker.io/api/file/OyZRTWDSJOkhzfcNzu9w)
+
 That is it. You are up and running.
