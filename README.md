@@ -6,8 +6,8 @@ Distelli is a DevOps continuous integration and continuous deployment tool.
 On the Internet, there are numerous instructions describing installing Wordpress. But many of them often have a step that simply says; "Create a database for WordPress on your web server". Not everyone knows how to do this. Not everyone has a web server. Not everyone wants to learn how to install database software and create a new database and database user.
 
 If you have an Internet connected server and want to get started using Wordpress, this article is for you. This takes advantage of Distelli's powerful deployment system to install and configure:
-* Web Server (nginx)
-* Database Server (mysql)
+* Web Server (Nginx)
+* Database Server (MySQL)
  - A database
  - A database user
  - A database user password
@@ -16,32 +16,14 @@ If you have an Internet connected server and want to get started using Wordpress
 ## Step 1. Create a Free Account on Distelli
 In your web browser navigate to <a href="https://www.distelli.com/signup" target="_blank">https://www.distelli.com/signup</a> and sign-up for your free Distelli account.
 
-![alt text](https://www.filepicker.io/api/file/G44t2S9LRUirfTpuiTtA")
-<br>
-[block:api-header]
-{
-  "type": "basic",
-  "title": "Step 2. Get the Deployment Instructions"
-}
-[/block]
+![alt text](https://www.filepicker.io/api/file/G44t2S9LRUirfTpuiTtA)
+
+##Step 2. Get the Deployment Instructions
 The Distelli deployment instructions are in a distelli-manifest.yml file.  This file and an nginx configuration file are available in a distelli public GitHub repository here.
-[block:code]
-{
-  "codes": [
-    {
-      "code": "https://github.com/distelli/distelli_wordpress",
-      "language": "text"
-    }
-  ]
-}
-[/block]
+
 Fork this repository to your GitHub account.
-[block:api-header]
-{
-  "type": "basic",
-  "title": "Step 3. Create the Application in Distelli"
-}
-[/block]
+
+## Step 3. Create the Application in Distelli
 In Distelli click the **Applications** link at the top of the WebUI. Then click the **New App** button on the top right.
 <br>
 [block:image]
