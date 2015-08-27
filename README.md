@@ -15,23 +15,8 @@ If you have an Internet connected server and want to get started using Wordpress
  - Database connection information
 ## Step 1. Create a Free Account on Distelli
 In your web browser navigate to <a href="https://www.distelli.com/signup" target="_blank">https://www.distelli.com/signup</a> and sign-up for your free Distelli account.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/G44t2S9LRUirfTpuiTtA",
-        "wp_1_shadow.png",
-        "1211",
-        "794",
-        "#5283ee",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
+
+![alt text](https://www.filepicker.io/api/file/G44t2S9LRUirfTpuiTtA")
 <br>
 [block:api-header]
 {
