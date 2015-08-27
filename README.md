@@ -11,7 +11,7 @@ If you have an Internet connected server and want to get started using Wordpress
  - A database
  - A database user
  - A database user password
-* Wordpress
+* WordPress
  - Database connection information
 ## Step 1. Create a Free Account on Distelli
 In your web browser navigate to <a href="https://www.distelli.com/signup" target="_blank">https://www.distelli.com/signup</a> and sign-up for your free Distelli account.
@@ -61,91 +61,27 @@ After entering a name, click the **Use GitHub** button.
 [/block]
 <br>
 Select the repository you forked from [Step 2](#step-2-get-the-deployment-instructions) above.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/oHaOt0BQQHi9azS99ilW",
-        "wp_6_new_app2_shadow.png",
-        "1287",
-        "646",
-        "#38aae9",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text](https://www.filepicker.io/api/file/oHaOt0BQQHi9azS99ilW)
+
 Choose the **master** branch.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/2h7kiV2TpK1CA7JfFGWq",
-        "wp_7_new_app3_shadow.png",
-        "1287",
-        "554",
-        "#b43f54",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text]("https://www.filepicker.io/api/file/2h7kiV2TpK1CA7JfFGWq)
+
 Two environment will be automatically created for you. Click the **All Done** button to continue.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/XQjPWM7QbQbg13HC5aDQ",
-        "wp_8_new_app4_shadow.png",
-        "1286",
-        "471",
-        "#1caae6",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text]("https://www.filepicker.io/api/file/XQjPWM7QbQbg13HC5aDQ)
+
 At this point you will pause the *new application workflow* and edit the deployment instructions before continuing.
-<br>
-[block:api-header]
-{
-  "type": "basic",
-  "title": "Step 4. Edit the distelli-manifest.yml Instructions"
-}
-[/block]
+
+## Step 4. Edit the distelli-manifest.yml Instructions
+
 You already have a distelli-manifest.yml file provided in the repository you forked earlier. You must edit this file and commit the edit to your repository.
 
 Edit the distelli-manifest.yml file.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/2Ow5jhi0RJWlZ4rCmm5O",
-        "wp_9_manifest.png",
-        "724",
-        "269",
-        "#359541",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text]("https://www.filepicker.io/api/file/2Ow5jhi0RJWlZ4rCmm5O)
+
 Set the values as appropriate:
 * <SET_ME_DISTELLI_USERNAME> = This should be set to your Distelli username you created when you signed up. For more info see: [Finding Your Distelli Username](doc:finding-your-distelli-username).
 * MYSQL_ROOT_PASSWORD: "<SET_ME>" = The root (master) password for the mysql database server.
@@ -183,24 +119,9 @@ Commit the changes to your repository.
 Go back to the Distelli WebUI and click the **I've pushed my Repo** button.
 
 Click the **Looks good. Start Build!** button.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/3ulexcwqQ2KGbnaPvsqn",
-        "wp_10_new_app5_shadow.png",
-        "1285",
-        "571",
-        "#b2453d",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text]("https://www.filepicker.io/api/file/3ulexcwqQ2KGbnaPvsqn)
+
 The build that is kicked off will validate that you have the correct Distelli user name and your application name matches. After a successful build, a software release will be created. For more information on builds see [Viewing Builds](doc:viewing-builds).
 
 If you are not on the builds list page, click the **Builds** button at the top of the Distelli WebUI.
@@ -208,86 +129,23 @@ If you are not on the builds list page, click the **Builds** button at the top o
 Your successful build will be at the top of the list. 
 
 Click the **New Deployment** button at the top right to begin a deployment
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/hwL33UtQSRWLMSJaH4pw",
-        "wp_11_build_list_release_shadow.png",
-        "1289",
-        "591",
-        "#ee7263",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
-[block:api-header]
-{
-  "type": "basic",
-  "title": "Step 6. Deploy the Application"
-}
-[/block]
+
+![alt text]("https://www.filepicker.io/api/file/hwL33UtQSRWLMSJaH4pw)
+
+
+## Step 6. Deploy the Application
+
 In the new deployment wokflow step 1, click **Deploy a Release**.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/g5raGGQMSD2I2LVUZRFT",
-        "wp_new_dep1_shadow.png",
-        "1287",
-        "659",
-        "#ab3f58",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text]("https://www.filepicker.io/api/file/g5raGGQMSD2I2LVUZRFT)
+
 Select the application you wish to deploy. 
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/GKSkldiGTqSgDQpfM2BU",
-        "wp_new_dep2_shadow.png",
-        "1286",
-        "608",
-        "#ab4b53",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
-<br>
+
+![alt text](https://www.filepicker.io/api/file/GKSkldiGTqSgDQpfM2BU)
+
 Select the release you wish to deploy. You should only have the one release created from the successful build.
-<br>
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://www.filepicker.io/api/file/RTabu02eRxuM7Y1vmmJd",
-        "wp_new_dep3_shadow.png",
-        "1284",
-        "466",
-        "#a74654",
-        ""
-      ]
-    }
-  ]
-}
-[/block]
+
+![alt text](https://www.filepicker.io/api/file/RTabu02eRxuM7Y1vmmJd)
 <br>
 Select the **-prod** environment. If you have been following along with the same application name (distell_wordpress) the environment will be named **distelli_wordpress-prod**, select that.
 <br>
