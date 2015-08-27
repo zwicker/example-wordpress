@@ -1,3 +1,4 @@
+#Build and Deploying WordPress to 14.4 to Distelli
 WordPress is a full content management system with thousands of plugins, widgets, and themes.
 
 Distelli is a DevOps continuous integration and continuous deployment tool.
@@ -12,12 +13,7 @@ If you have an Internet connected server and want to get started using Wordpress
  - A database user password
 * Wordpress
  - Database connection information
-[block:api-header]
-{
-  "type": "basic",
-  "title": "Step 1. Create a Free Account on Distelli"
-}
-[/block]
+## Step 1. Create a Free Account on Distelli
 In your web browser navigate to <a href="https://www.distelli.com/signup" target="_blank">https://www.distelli.com/signup</a> and sign-up for your free Distelli account.
 <br>
 [block:image]
