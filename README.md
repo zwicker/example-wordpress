@@ -74,18 +74,12 @@ Set the values as appropriate:
 * DB_USER_PASSWORD: "<SET_ME>" = The password for the Wordpress database user.
 
 Leave all the other content in the file alone.
-[block:callout]
-{
-  "type": "warning",
-  "body": "Note: distelli_wordpress is the name of the application. This must match the name you gave the application in Distelli."
-}
-[/block]
+
+Note: distelli_wordpress is the name of the application. This must match the name you gave the application in Distelli.
+
 Here is an example edited text.
-[block:code]
-{
-  "codes": [
-    {
-      "code": "johndoe/distelli_wordpress:\n      \n  Env:\n    # Set the variables below\n    - MYSQL_ROOT_PASSWORD: \"pa55w0rd\"\n    - DB_NAME: \"wordpress_db\"\n    - DB_USER_NAME: \"wordpress_user\"\n    - DB_USER_PASSWORD: \"wordpress_user_password\"\n",
+
+```johndoe/distelli_wordpress:\n      \n  Env:\n    # Set the variables below\n    - MYSQL_ROOT_PASSWORD: \"pa55w0rd\"\n    - DB_NAME: \"wordpress_db\"\n    - DB_USER_NAME: \"wordpress_user\"\n    - DB_USER_PASSWORD: \"wordpress_user_password\"\n",
       "language": "text"
     }
   ]
@@ -93,13 +87,9 @@ Here is an example edited text.
 [/block]
 Save your changes.
 Commit the changes to your repository.
-<br>
-[block:api-header]
-{
-  "type": "basic",
-  "title": "Step 5. Build the Application"
-}
-[/block]
+
+## Step 5. Build the Application
+
 Go back to the Distelli WebUI and click the **I've pushed my Repo** button.
 
 Click the **Looks good. Start Build!** button.
@@ -120,7 +110,7 @@ Click the **New Deployment** button at the top right to begin a deployment
 
 In the new deployment wokflow step 1, click **Deploy a Release**.
 
-![alt text]("https://www.filepicker.io/api/file/g5raGGQMSD2I2LVUZRFT)
+![alt text](https://www.filepicker.io/api/file/g5raGGQMSD2I2LVUZRFT)
 
 Select the application you wish to deploy. 
 
