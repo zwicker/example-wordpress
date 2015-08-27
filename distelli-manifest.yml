@@ -84,5 +84,3 @@
     
   Terminate:
     - sudo service nginx stop
-      
-    
