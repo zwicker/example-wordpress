@@ -20,6 +20,16 @@
 
   PreInstall:
     - echo '===Begin PreInstall==='
+    
+    - echo "---Checking for previous install---"
+    - if [[ -f /usr/share/nginx/html/distelli_is_installed.file ]]; then
+    -   echo "I'm sorry. This is a one time installer only."
+    -   echo "FYI: the file /usr/share/nginx/html/distelli_is_installed.file lets me know this. [hint hint]"
+    -   echo ""
+    -   echo "Let me clean some things up to ensure you have the correct permissions"
+    -   sudo chown -R www-data:www-data /usr/share/nginx/html
+    -   exit 1
+    - fi
 
     - echo "---Updating apt-get---"
     - sudo apt-get -y update
@@ -41,6 +51,9 @@
     - cd /usr/share/nginx/html
     - sudo tar -zxvf $DISTELLI_INSTALLHOME/latest.tar.gz --strip 1
     - sudo chown -R www-data:www-data /usr/share/nginx/html
+    
+    - echo "---Flagging as installed---"
+    - sudo touch /usr/share/nginx/html/distelli_is_installed.file
 
     - echo "===Done with PreInstall===="
     
