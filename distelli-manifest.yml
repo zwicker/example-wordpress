@@ -1,4 +1,4 @@
-<SET_ME_DISTELLI_USERNAME>/distelli_wordpress:
+<SET_ME_DISTELLI_USERNAME>/wordpress:
       
   Env:
     # Set the variables below
@@ -22,9 +22,9 @@
     - echo '===Begin PreInstall==='
     
     - echo "---Checking for previous install---"
-    - if [[ -f /usr/share/nginx/html/distelli_is_installed.file ]]; then
+    - if [[ -f /usr/share/nginx/html/distelli_installed.file ]]; then
     -   echo "I'm sorry. This is a one time installer only."
-    -   echo "FYI the file /usr/share/nginx/html/distelli_is_installed.file lets me know this. [hint hint]"
+    -   echo "FYI the file /usr/share/nginx/html/distelli_installed.file lets me know this. [hint hint]"
     -   echo ""
     -   echo "Let me clean some things up to ensure you have the correct permissions"
     -   sudo chown -R www-data:www-data /usr/share/nginx/html
@@ -53,7 +53,7 @@
     - sudo chown -R www-data:www-data /usr/share/nginx/html
     
     - echo "---Flagging as installed---"
-    - sudo touch /usr/share/nginx/html/distelli_is_installed.file
+    - sudo touch /usr/share/nginx/html/distelli_installed.file
 
     - echo "===Done with PreInstall===="
     
