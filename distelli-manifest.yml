@@ -1,4 +1,4 @@
-emmetvroom/example-wordpress:
+vroomemmet/example-wordpress:
       
   Env:
     # Set the variables below
