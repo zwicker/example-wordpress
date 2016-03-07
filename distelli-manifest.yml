@@ -77,7 +77,10 @@ vroomemmet/example-wordpress:
     - echo "===Done with PostInstall===="
 
 
-  Exec:
+  Start:
+    - sudo service nginx restart
+    
+  PostRestart:
     - sudo service nginx restart
     
   Terminate:
