@@ -75,9 +75,7 @@ vroomemmet/example-wordpress:
     - sudo chown www-data:www-data /usr/share/nginx/html/wp-config.php
 
     - echo "===Done with PostInstall===="
-    
-  Start:
-    - sudo service nginx restart
+
 
   Exec:
     - sudo service nginx restart
