@@ -79,7 +79,7 @@ vroomemmet/example-wordpress:
   Start:
     - sudo service nginx restart
 
-  Restart:
+  Exec:
     - sudo service nginx restart
     
   Terminate:
